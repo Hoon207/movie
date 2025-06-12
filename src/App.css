@@ -1,0 +1,114 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+main{padding:150px !important;}
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #00000046;
+  position:fixed;
+  top:0px;
+  z-index: 1000;
+}
+
+header #logo {
+  width: 155px;
+  margin-top: 26px;
+  margin-left: 20px;
+  
+}
+
+header ul{
+  text-align: center;
+  display: flex;
+  list-style: none;
+  position:absolute; 
+  left:700px;
+  top:40px;
+  
+}
+header ul li{margin: 0px 30px;}
+
+.gnb li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.movie_list{display:grid; grid-template-columns: repeat(5,1fr); gap:10px;}
+main {
+  background-color: black;
+  color: black;
+  padding: 50px 50px;
+  overflow: auto;
+  color:white;
+}
+
+.info_content {
+  right: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.loading {
+  z-index: 10000000;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  height: 100%;
+}
+
+.movie {
+  width: 230px; /* 항목의 너비를 설정하여 4열을 맞추는 방식 */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 00px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.movie:hover .info {
+  display: block;
+}
+
+.info p {
+  overflow-wrap: break-word;
+  font-size: 14px;
+}
+
+footer {
+  height: 150px;
+  background-color: #1a1a1a;
+  text-align: center;
+  color:white;
+  position: relative;
+}
+
+footer ul{display: flex;  list-style: none; text-align: center; width:800px; margin: 0 auto;}
+footer li{list-style: none;  text-align: center;}
+footer div{text-align: center;}
+footer address {
+  color: #fff;
+}
